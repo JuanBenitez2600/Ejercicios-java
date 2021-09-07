@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercer ejercicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="display 2">Tienda dulce</div>
+        <table class="table">
+            <tr>
+                <td>Tipo de dulce</td>
+                <td>Cantidad</td>
+            </tr>
+                <td>
+                    <select id="Tipo_de_dulce" class="form-control" onchange="calcular()">
+                        <option value="1">Dulce del dia</option>
+                        <option value="2">Dulce que no es del dia</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Cantidad" class="form-control" onchange="calcular()">
+                        <script>
+                            for (var i = 0; i <=50; i++){
+                                document.write("<option value='"+i+"'>"+i+"</option>");
+                            }
+                        </script>
+                    </select>
+                </td>
+            <tr>
+            </tr>
+        </table>
+        <table class="table">
+            <tr>
+                <td>Coste final total</td>
+                <td><span id="sueldoBase"></span></td>
+            </tr>
+            <tr>
+                <td>Precio habitual</td>
+                <td><span id="1"></span></td>
+            </tr>
+            <tr>
+                <td>Descuento</td>
+                <td><span id="2"></span></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
